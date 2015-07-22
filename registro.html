@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/animated.css">
+
+</head>
+<body class="animated slideInDown">
+	<div class="container">
+	<h2>Registro de usuario</h2>
+		<form action="reg.php" method="POST">
+			<div class="form-group">
+				<input id="nombre" type="text" name="nombre" class="form-control input-s" placeholder="Nombre" required/>
+				<span id="msjnombre"></span>
+			</div>
+
+			<div class="form-group">
+				<input id="correo" type="email" name="correo" class="form-control input-s" placeholder="Correo" required/>
+				<span id="msjcorreo"></span>
+			</div>
+
+			<div class="form-group">
+				<input id="telefono" type="number" name="telefono" class="form-control input-s" placeholder="Telefono" required/>
+				<span id="msjtelefono"></span>
+			</div>
+
+			<div class="form-group">
+				<input id="user" type="text" name="user" class="form-control input-s" placeholder="Usuario" required/>
+				<span id="msjuser"></span>
+			</div>
+				<div class="form-group">
+				<input id="pass" type="password" name="pass" class="form-control input-s" placeholder="Contraseña" required/>
+				<span id="msjpass"></span>
+			</div>
+			
+			<div class="form-group">
+				<button type="submit" class="form-control" id="but">Registrarme</button>
+			</div>
+
+			<div class="form-group">
+				<a href="index.html">Iniciar Sesion</a>
+			</div>
+		</form>
+	</div>
+</body>
+<footer>
+	<div class="pie">
+		<p>Web developers by Luis Torres</p>
+	</div>
+</footer>
+</html>
