@@ -1,0 +1,242 @@
+html {
+	background:url(../images/fondo.jpg);
+	background-repeat:no-repeat;
+}
+a {
+	font-size:11px;
+	font-family:"Open Sans";
+	background-color:rgba(100%,100%,100%,0.3);
+	border-radius:30px;
+	color: black;
+	padding: 4px;
+	text-decoration: none;
+	box-shadow:0px 0px 10px white;
+	border:1px white solid;
+	transition-property: background-color, color;
+	transition-duration: 1500ms;
+	transition-timing-function:ease-in-out;
+}
+a:hover {
+	background:rgba(0%,50%,100%,0.3);
+	color: white;
+	padding: 4px;
+}
+body {
+	background-color:transparent;
+	color: white;
+	font-family: "Open Sans", "Helvetica Neue",Helvetica,Arial,Sans-serif;
+	font-size: 13px;
+}
+input {
+	border: 4px solid white;
+	height: 30px;
+}
+
+.letraini {
+	color:white;
+	position:relative;
+	top:0;
+	left:12%;
+	width:75%;
+	background:transparent;
+	border-radius:50px 50px 50px 50px;
+	box-shadow:0px 0px 25px white;
+}
+
+/*fortawesome.github.io/font-Awesome/*/
+
+.container {
+	position:relative;
+	top:10px;
+	border-radius:40px;
+	color:white;
+	background-color:rgba(0%,0%,50%,0.1);
+	border: 2px solid white;
+	height: auto;
+	margin: auto auto;
+	padding: 15px 0 2px 0;
+	text-align: center;
+	width: 250px;
+	box-shadow:0px 0px 20px;
+}
+.form-control,.form-control:focus {
+	font-family: "Open Sans";
+	border-radius:13px;
+	text-decoration:none;
+	background:transparent;
+	border:2px solid white;
+	box-shadow:none;
+}
+.form-control:focus {
+	border-color:white;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.input-s-sm {
+	width: 120px;
+}
+.input-s {
+	box-shadow: 0px 0px 100px white;
+	border: 2px solid white;
+	background:transparent;
+	width: 200px;
+}
+.input-s-lg {
+	width: 250px;
+}
+
+.pie {
+	font-family:"Arial";
+	position:fixed;
+	right:39%;
+	top:128%;
+	width:22%;
+	height:15%;
+	text-align:center;
+	color: white;
+	border-radius: 15px;
+	box-shadow: 0px 0px 25px;
+	filter: blur(0.2px);
+	border:1px solid white;
+	transform-origin: 0px 0px;
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.pie {
+	animation-name: pie;
+	animation-duration:5s;
+	animation-iteration-count: nfinite;
+}
+
+@keyframes pie {
+	0% {
+		left:0%;
+		top:0%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 10px white;
+		transform: rotateZ(90deg);
+	}
+	10% {
+		left:10%;
+		top: 1%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 20px white;
+		transform: rotateZ(0deg);
+	}
+	20% {
+		left: 20%;
+		top: 50%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 30px white;
+		transform: rotateZ(90deg);
+	}
+	30% {
+		left: 30%;
+		top: 20%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 40px white;
+		transform: rotateZ(0deg);
+	}
+	40% {
+		left: 40%;
+		top: 70%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 50px white;
+		transform: rotateZ(90deg) rotateY(180deg);
+	}
+	50% {
+		left: 50%;
+		top: 15%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 70px white;
+		transform: rotateZ(180deg);
+	}
+	60% {
+		left: 60%;
+		top: 60%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 60px white;
+		transform: rotateZ(90deg);
+	}
+	70% {
+		left: 70%;
+		top: 10%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 40px white;
+		transform: rotateZ(0deg);
+	}
+	80% {
+		left: 80%;
+		top: 50%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 30px white;
+		transform: rotateZ(180deg);
+	}
+	90% {
+		left: 90%;
+		top: 10%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 10px white;
+		transform: rotateZ(90deg);
+	}
+	100% {
+		left: 100%;
+		top: 30%;
+		border: 1px solid white;
+		box-shadow: 0px 0px 10px white;
+		transform: rotateZ(0deg);
+	}
+}
+
+.demo {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	float: right;
+	margin-right: 20px;
+	background-color:transparent;
+}
+
+.demo p,.demo h2 {
+	color: #fff;
+	padding: 10px;
+	left: -20px;
+	top: 20px;
+	position: relative;
+}
+
+.demo p {
+	font-family:"Lato";
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+}
+
+.demo h2 {
+	font-family: "Lato";
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0;
+}
+
+.effect img {
+	background:;
+	position: absolute;
+	margin:15px 0;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	transition:top 2s ease-in-out,right 1s ease-in-out;
+}
+
+.effect img.top:hover {
+	top: -230px;
+	right: -330px;
+	padding-bottom: 200px;
+	padding-left: 300px;
+
+
+/* filter: blur(5px); Filtro */
+/* background-size:contain; = Mejorar la imagen*/ 
